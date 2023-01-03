@@ -1,0 +1,21 @@
+<nav id="site-navigation" class="main-navigation" role="navigation">
+	<button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
+		<i class="menu-toggle__icon material-icons"></i>Menu</button>
+	<ul id="main-menu" class="menu">
+	    
+	    {% for mitem in nav('main_menu') %}
+	        {% if mitem.items %}
+	            <li id="menu-item-{{ mitem.id }}" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="{{ mitem.url }}">{{ mitem.name }}</a>
+    	            <ul class="sub-menu">
+    	            {% for sitem in mitem.items %}
+    	                <li id="menu-item-{{ sitem.id }}" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ sitem.url }}">{{ sitem.name }}</a></li>
+    	            {% endfor %}
+    	            </ul>
+	            </li>
+	        {% else %}
+	            <li id="menu-item-{{ mitem.id }}" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ mitem.url }}">{{ mitem.name }}</a></li>
+	        {% endif %}
+	    {% endfor %}
+	    
+	</ul>
+</nav><!-- #site-navigation -->

@@ -1,0 +1,116 @@
+<head>
+<meta charset="UTF-8">
+<base href="/">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stephania {{ metaTitle }}</title>
+<meta name="keywords" content="{{ metaKeywords }}">
+<meta name="description" content="{{ metaDescription }}">
+
+<style type="text/css">
+/* Light Color */
+    body #booked-profile-page input[type=submit].button-primary:hover,
+    body table.booked-calendar input[type=submit].button-primary:hover,
+    body .booked-modal input[type=submit].button-primary:hover,
+    body table.booked-calendar thead,
+    body table.booked-calendar thead th,
+    body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+    body #booked-profile-page .booked-profile-appt-list .appt-block .google-cal-button,
+    body #booked-profile-page .booked-profile-header
+    { background:#01edc9 !important; }
+
+    body #booked-profile-page input[type=submit].button-primary:hover,
+    body table.booked-calendar input[type=submit].button-primary:hover,
+    body .booked-modal input[type=submit].button-primary:hover,
+    body table.booked-calendar th,
+    body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+    body #booked-profile-page .booked-profile-appt-list .appt-block .google-cal-button,
+    body #booked-profile-page .booked-profile-header
+    { border-color:#01edc9 !important; }
+
+
+    /* Dark Color */
+    body table.booked-calendar tr.days,
+    body table.booked-calendar tr.days th,
+    body .booked-calendarSwitcher,
+    body .booked-calendarSwitcher select
+    { background:#333333 !important; }
+    
+    body table.booked-calendar tr.days th
+    { border-color:#333333 !important; }
+
+
+    /* Primary Button Color */
+    body #booked-profile-page input[type=submit].button-primary,
+    body table.booked-calendar input[type=submit].button-primary,
+    body .booked-modal input[type=submit].button-primary,
+    body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+    body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block
+    { background:#01edc9; }
+
+    body #booked-profile-page input[type=submit].button-primary,
+    body table.booked-calendar input[type=submit].button-primary,
+    body .booked-modal input[type=submit].button-primary,
+    body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button
+    { border-color:#01edc9; }
+</style>
+<link rel='dns-prefetch' href='//maps-api-ssl.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+    	display: inline !important;
+    	border: none !important;
+    	box-shadow: none !important;
+    	height: 1em !important;
+    	width: 1em !important;
+    	margin: 0 .07em !important;
+    	vertical-align: -0.1em !important;
+    	background: none !important;
+    	padding: 0 !important;
+    }
+</style>
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%7CMontserrat%3A700%2C400&#038;subset=cyrillic%2Ccyrillic-ext%2Clatin%2Cgreek-ext%2Cgreek%2Clatin-ext%2Cvietnamese&#038;ver=1.6.11' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/booked/tooltipster.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/booked/tooltipster-light.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/booked/animations.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/booked/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/booked/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-services-list/cherry-services.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-services-list/cherry-services-theme.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-services-list/cherry-services-grid.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/font-awesome.min.css' type='text/css' media='all' />
+<!--link rel='stylesheet' href='assets/contact-form-7/styles.css?ver=4.6.1' type='text/css' media='all' /-->
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/frontend/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/material-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/frontend/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/frontend/lightgallery.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/frontend/style-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-photo-gallery/css/frontend/grid.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-search/cherry-handler-styles.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Poppins%3A400%2C300%2C500%2C700%2C600&#038;subset=latin&#038;ver=4.7.10' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/material-design.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/fl-glypho.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-content-builder/swiper.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/tm-content-builder/style.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/magnific-popup.min.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-team-members/cherry-team.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/cherry-team-members/cherry-team-grid.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/material-icons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/assets/css/swiper.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='assets/stephania/style.css' type='text/css' media='all' />
+<!--script type='text/javascript' src='js/jquery.js'></script-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+
+
+<meta name="generator" content="CMS EDGESTILE SiteEdit" />
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="icon" href="images/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="images/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="images/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="images/cropped-favicon-1-270x270.png" />
+<link rel='stylesheet' href='css/style.css' type='text/css' />
+</head>

@@ -1,0 +1,76 @@
+[2019-07-05 14:46:29] Хост: md4.e-stile.ru
+template:ActiveBoxmaket:ActiveBox
+seonlinehttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%22md4.e-stile.ru%22%7Dhttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%22md4.e-stile.ru%22%7DID зоны: 1504
+
+Пробуем добавить домен: md4.e-stile.ru
+https://api.beget.com/api/domain/addVirtual?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22hostname%22%3A%22md4%22%2C%22zone_id%22%3A%221504%5Cn%22%7Dhttps://api.beget.com/api/site/linkDomain?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22domain_id%22%3A5399064%2C%22site_id%22%3A3673560%7Dhttps://api.beget.com/api/domain/changePhpVersion?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22full_fqdn%22%3A%22md4.e-stile.ru%22%2C%22php_version%22%3A7.2%2C%22is_cgi%22%3A0%7DСоздаем базу
+https://api.beget.com/api/mysql/addDb?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200102%22%2C%22password%22%3A%222ee428ea3c%22%7Dhttps://api.beget.com/api/mysql/changeAccessPassword?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200102%22%2C%22access%22%3A%22localhost%22%2C%22password%22%3A%222ee428ea3c%22%7D
+Устанавливаем дамп edgestile_200102
+result:0
+
+Копируем билд /home/e/edgestile/admin/home/siteedit/bin/setup/seonline -> /home/e/edgestile/md4.e-stile.ru ok installTeplate - ActiveBoxArray
+(
+    [DBName] => edgestile_200102
+    [HostName] => localhost
+    [DBUserName] => edgestile_200102
+    [DBPassword] => 2ee428ea3c
+    [DBDsn] => mysql
+)
+
+Устанавливаем дамп edgestile_200102
+result:0
+Base ID:5909
+Хост ID: 3673560
+Попытка привязки: md4.e-stile.ru (0)
+Домен привязан: md4.e-stile.ru (5399064)
+Получил все алиасы из api_domains Array
+(
+)
+ 
+domain_id: 5399064 для 13187
+
+Меняем статус у домена 13187 на N 
+Статус активности ОК
+
+OK
+Fri, 05 Jul 2019 14:46:29 +0300 
+ 
+
+[2021-11-07 09:55:15] Хост: 0001.e-stile.ru
+template:ActiveBoxmaket:ActiveBox
+seonlinehttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%220001.e-stile.ru%22%7Dhttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%220001.e-stile.ru%22%7DID зоны: 1504
+
+Пробуем добавить домен: 0001.e-stile.ru
+https://api.beget.com/api/domain/addVirtual?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22hostname%22%3A%220001%22%2C%22zone_id%22%3A%221504%5Cn%22%7Dhttps://api.beget.com/api/site/linkDomain?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22domain_id%22%3A8816064%2C%22site_id%22%3A5951352%7Dhttps://api.beget.com/api/domain/changePhpVersion?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22full_fqdn%22%3A%220001.e-stile.ru%22%2C%22php_version%22%3A7.2%2C%22is_cgi%22%3A0%7DСоздаем базу
+https://api.beget.com/api/mysql/addDb?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200131%22%2C%22password%22%3A%223K6%24mZy_mI%22%7Dhttps://api.beget.com/api/mysql/changeAccessPassword?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200131%22%2C%22access%22%3A%22localhost%22%2C%22password%22%3A%223K6%24mZy_mI%22%7D
+Устанавливаем дамп edgestile_200131
+result:1
+
+Копируем билд /home/e/edgestile/admin/home/siteedit/bin/setup/seonline -> /home/e/edgestile/0001.e-stile.ru ok installTeplate - ActiveBoxArray
+(
+    [DBName] => edgestile_200131
+    [HostName] => localhost
+    [DBUserName] => edgestile_200131
+    [DBPassword] => 3K6
+    [DBDsn] => mysql
+)
+
+Устанавливаем дамп edgestile_200131
+result:1
+Base ID:6010
+Хост ID: 5951352
+Попытка привязки: 0001.e-stile.ru (0)
+Домен привязан: 0001.e-stile.ru (8816064)
+Получил все алиасы из api_domains Array
+(
+)
+ 
+domain_id: 8816064 для 13680
+
+Меняем статус у домена 13680 на N 
+Статус активности ОК
+
+OK
+Sun, 07 Nov 2021 09:55:15 +0300 
+ 
+

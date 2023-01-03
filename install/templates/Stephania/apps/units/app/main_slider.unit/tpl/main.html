@@ -1,0 +1,40 @@
+<div class="tm_pb_section  tm_pb_section_0 tm_section_regular tm_section_transparent">
+	<div class=" row tm_pb_row tm_pb_row_0 tm_pb_row_fullwidth">
+		<div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_0 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="tm_pb_slider invert tm_pb_slider_0 tm_pb_slider_fullwidth_off  tm_pb_slider_no_pagination   tm_pb_slider_no_shadow  tm_pb_module">
+				<div class="tm_pb_slides">
+				    {% for record in part.values.items %}
+					<div class="tm_pb_slide tm_pb_bg_layout_light tm_pb_media_alignment_center tm_pb_slide_{{ record.id }} tm-pb-active-slide" style='background-color:#ffffff;background-image:url({{ record.image }});'>
+						<div class="tm_pb_container clearfix">
+							<div class="tm_pb_slide_description">
+								<div class="tm_pb_slide_content">
+								    {% if record.fields.label_1 %}
+									<h3>{{ record.fields.label_1 }}</h3>
+									{% endif %}
+									{% if record.fields.label_2 %}
+									<h1><span style="color: #00a8ac;">{{ record.fields.label_2 }}</span></h1>
+									{% endif %}
+									{% if record.fields.label_3 %}
+									<h2>{{ record.fields.label_3 }}</h2>
+									{% endif %}
+									{% if record.fields.label_4 %}
+									<h4>{{ record.fields.label_4 }}</h4>
+									{% endif %}
+								</div>
+								<a href="{{ record.url }}" class="tm_pb_more_button tm_pb_button">Make an appointment</a>
+							</div>
+							<!-- .tm_pb_slide_description -->
+						</div>
+						<!-- .tm_pb_container -->
+					</div>
+					<!-- .tm_pb_slide -->
+					{% endfor %}
+				</div>
+				<!-- .tm_pb_slides -->
+			</div>
+			<!-- .tm_pb_slider -->
+		</div>
+		<!-- .tm_pb_column -->
+	</div>
+	<!-- .tm_pb_row -->
+</div>

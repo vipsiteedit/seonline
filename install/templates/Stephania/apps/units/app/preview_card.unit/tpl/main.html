@@ -1,0 +1,24 @@
+<!-- .tm_pb_text -->
+<div class="tm_pb_cherry_team tm_pb_cherry_team_0">
+	<div class="team-container">
+		<div class="cherry-team team-wrap template-with_more">
+			<div class="team-listing cherry-team-row">
+			    {% for record in part.values.items %}
+					<div id="team-{{ record.id }}" class=" team-item item-1 clearfix odd col_xs_1 col_sm_1 col_md_2 col_xl_3">
+						<div class="team-listing_photo"><a href="{{ record.url }}"><img width="536" height="412" src="{{ record.image }}" class="avatar wp-post-image" alt="{{ record.image_alt }}" /></a></div>
+						<h2 class="team-listing_name"><a href="{{ record.url }}">{{ record.name }}</a></h2>
+						{% if record.fields.spec %}
+                            <p class="team-listing_position"><span class="team-meta_item position">{{ record.fields.spec }}</span></p>
+                        {% else %}
+                            <p class="team-listing_position"><span class="team-meta_item position">STYLIST</span></p>
+                        {% endif %}
+						<div class="team-listing_desc">{{ record.note }}</div>
+						<a href="{{ record.url }}" class="btn btn-primary" >Read more</a>
+					</div>
+					<!--/.team-item-->
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- .tm_pb_cherry_team -->

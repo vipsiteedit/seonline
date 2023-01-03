@@ -1,0 +1,26 @@
+{% for group in part.thisgroups.items %}
+    {% for record in part.gvalues[group.id].items %}
+    <div class="tm_pb_section invert tm_pb_section_4 tm_pb_with_background tm_section_regular" style="background-image:url({{ record.image }});">
+    	<div class="container">
+        		<div class=" row tm_pb_row tm_pb_row_5">
+        			<div class="tm_pb_column tm_pb_column_1_2  tm_pb_column_8 tm_pb_column_empty col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        			</div>
+        			<!-- .tm_pb_column -->
+        			<div class="tm_pb_column tm_pb_column_1_2  tm_pb_column_9 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        				<hr class="tm_pb_module tm_pb_space tm_pb_divider_2" />
+        				<div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_left  tm_pb_text_3">
+        					<h1>{{ record.name }}</h1>
+        					<p>{{ record.note }}</p>
+        				</div>
+        				<!-- .tm_pb_text -->
+        				<div class="tm_pb_button_module_wrapper tm_pb_module">
+        					<a class="tm_pb_button tm_pb_custom_button_icon  tm_pb_button_1 tm_pb_module tm_pb_bg_layout_light tm_pb_icon_right" href="{{ record.url }}" data-icon="&#xf18e;">Read more</a>
+        				</div>
+        			</div>
+        			<!-- .tm_pb_column -->
+        		</div>
+    		<!-- .tm_pb_row -->
+    	</div>
+    </div>
+    {% endfor %}
+{% endfor %}

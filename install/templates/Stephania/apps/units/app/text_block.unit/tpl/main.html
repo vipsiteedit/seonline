@@ -1,0 +1,63 @@
+<div class="tm_pb_section  tm_pb_section_3 tm_pb_with_background tm_section_regular">
+{% for group in part.thisgroups.items %}
+<div class="container">
+	<div class=" row tm_pb_row tm_pb_row_3">
+		<div class="tm_pb_column tm_pb_column_4_4  {% if url.alias == 'aservices' %}tm_pb_column_0{% else %}tm_pb_column_6{% endif %} col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_2">
+				<h1>{{ group.name }}</h1>
+				<p>{{ group.note }}</p>
+			</div>
+			<!-- .tm_pb_text -->
+		</div>
+		<!-- .tm_pb_column -->
+	</div>
+	<!-- .tm_pb_row -->
+</div>
+<div class="container">
+	<div class=" row tm_pb_row tm_pb_row_4">
+		<div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_7 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="tm_pb_cherry_services tm_pb_cherry_services_0">
+				<div class="services-container">
+					<div class="cherry-services services-wrap {% if url.alias == 'aservices' %}template-default{% else %}template-listed-services{% endif %}">
+						<div class="services-listing cherry-services-row">
+						    {% for record in part.gvalues[group.id].items %}
+							<div id="services-848" class=" services-item item-1 clearfix odd col-xs-12 col-sm-6 col-md-4 col-xl-4">
+							    {% if url.alias == 'aservices' %}
+							    <div class="image_wrap">
+                                	<div class="services-macros">
+                                		<a href="{{ record.url }}">
+                                			<img width="1920" height="1080" src="{{ record.image }}" class="avatar wp-post-image" alt="Medi-spa">
+                                		</a>
+                                	</div>
+                                </div>
+                                {% endif %}
+								<div class="inner_wrap">
+									<div class="title_wrap">
+										<div class="services-macros"><a href="{{ record.url }}">{{ record.name }}</a></div>
+									</div>
+									<div class="content_wrap">
+										<div class="services-macros">
+											<p>{{ record.note }}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/.services-item-->
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .tm_pb_column -->
+	</div>
+	<!-- .tm_pb_row -->
+</div>
+{% endfor %}
+<!-- .tm_pb_cherry_services -->
+    {% if url.alias != 'aservices' %}
+	<div class="tm_pb_button_module_wrapper tm_pb_module tm_pb_button_alignment_center">
+		<a class="tm_pb_button tm_pb_custom_button_icon  tm_pb_button_0 tm_pb_module tm_pb_bg_layout_light tm_pb_icon_right" href="{{ url('aservices') }}" data-icon="&#xf18e;">View all services</a>
+	</div>
+	{% endif %}
+</div>

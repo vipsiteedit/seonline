@@ -1,0 +1,11 @@
+<section id="download" class="section download">
+    <div class="container">
+        {% for record in part.values.items %}
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <h3>{{ record.name }}</h3>
+            <p>{{ record.note }}</p>
+            <a href="{{ record.url }}" class="btn btn-large">Download for Free</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>

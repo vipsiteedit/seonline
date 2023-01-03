@@ -1,0 +1,26 @@
+<section id="testimonials" class="section testimonials no-padding">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="flexslider">
+                <ul class="slides">
+                    {% for record in part.values.items %}
+                    <li>
+                        <div class="col-md-6">
+                            <div class="avatar">
+                                <img src="{{ record.image }}" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <blockquote>
+                                <p>"{{ record.note }}"
+                                </p>
+                                <cite class="author">{{ record.name }}</cite>
+                            </blockquote>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

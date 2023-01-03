@@ -1,0 +1,106 @@
+{% set record = part.values.item %}
+<div id="primary" class="col-xs-12 col-md-12 col-lg-8">
+	<main id="main" class="site-main" role="main">
+		<article  >
+			<div class="cherry-team team-wrap template-single">
+				<div id="team-331" class="team-single-item invert item-1 clearfix odd">
+					<div class="team-photo">
+						<div class="team-macros"><img width="1728" height="1024" src="{{ record.image }}" class="avatar wp-post-image" alt="{{ record.name }}"  /></div>
+					</div>
+					<div class="team-meta">
+						<h1 class="team-member-name">{{ record.name }}</h1>
+						<div class="team-macros"><span class="team-meta_item position">{{record.fields.spec}}</span></div>
+						<div class="team-macros">
+							<div class="team-socials">
+							    {% if record.fields.fb %}
+								<div class="team-socials_item"><a href="{{ record.fields.fb }}" class="team-socials_link" rel="nofollow"><i class="team-socials_icon fl-glypho fl-glypho-facebook2"></i><span class="team-socials_label empty-label"></span></a></div>
+								{% endif %}
+								{% if record.fields.tw %}
+								<div class="team-socials_item"><a href="{{ record.fields.tw }}" class="team-socials_link" rel="nofollow"><i class="team-socials_icon fl-glypho fl-glypho-twitter"></i><span class="team-socials_label empty-label"></span></a></div>
+								{% endif %}
+								{% if record.fields.ggp %}
+								<div class="team-socials_item"><a href="{{ record.fields.ggp }}" class="team-socials_link" rel="nofollow"><i class="team-socials_icon fl-glypho fl-glypho-google-plus"></i><span class="team-socials_label empty-label"></span></a></div>
+								{% endif %}
+								{% if record.fields.inst %}
+								<div class="team-socials_item"><a href="{{ record.fields.inst }}" class="team-socials_link" rel="nofollow"><i class="team-socials_icon fl-glypho fl-glypho-instagram19"></i><span class="team-socials_label empty-label"></span></a></div>
+							    {% endif %}
+							</div>
+						</div>
+						<div class="team-content">
+							<div class="post-content">
+								<div class="tm_builder_outer_content" id="tm_builder_outer_content">
+									<div class="tm_builder_inner_content tm_pb_gutters3">
+										{{ record.fields.full_text }}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="team-contact-info invert">
+							<h1>Contacts</h1>
+							{% if record.fields.address %}
+							<div class="team-macros"><span class="team-meta_item location">{{ record.fields.address }}</span></div>
+							{% endif %}
+							{% if record.fields.phone %}
+							<div class="team-macros"><span class="team-meta_item phone">{{ record.fields.phone }}</span></div>
+							{% endif %}
+							{% if record.fields.fax %}
+							<div class="team-macros"><span class="team-meta_item fa-fax">{{ record.fields.fax }}</span></div>
+							{% endif %}
+							{% if record.fields.email %}
+							<div class="team-macros"><span class="team-meta_item email"><a href="mailto:{{ record.fields.email }}">{{ record.fields.email }}</a></span></div>
+						    {% endif %}
+						</div>
+					</div>
+				</div>
+				<!--/.team-item-->
+			</div>
+		</article>
+	</main>
+	<!-- #main -->
+</div>
+<!-- #primary -->
+<div id="sidebar" class="col-xs-12 col-md-12 col-lg-4 sidebar widget-area" role="complementary">
+	<aside id="mp-timetable-11" class="widget widget_recent_entries">
+		<h2 class="widget-title">Doctor Schedule</h2>
+		<ul>
+			<li class="event">
+				<a href="#" title="Primary Health" class="event-link">
+				Primary Health					</a><br/>
+				<span class="post-date">
+				Thursday					<br/>
+				<time datetime="10:00" class="timeslot-start">10:00 am</time>
+				- 						<time datetime="13:30" class="timeslot-end">1:30 pm</time>
+				</span>
+			</li>
+		</ul>
+		<ul>
+			<li class="event">
+				<a href="#" title="Liposuction" class="event-link">
+				Liposuction					</a><br/>
+				<span class="post-date">
+				Friday					<br/>
+				<time datetime="07:00" class="timeslot-start">7:00 am</time>
+				- 						<time datetime="11:30" class="timeslot-end">11:30 am</time>
+				</span>
+			</li>
+			<li class="event">
+				<a href="#" title="Reconstructive surgery" class="event-link">
+				Reconstructive surgery					</a><br/>
+				<span class="post-date">
+				Friday					<br/>
+				<time datetime="11:30" class="timeslot-start">11:30 am</time>
+				- 						<time datetime="14:30" class="timeslot-end">2:30 pm</time>
+				</span>
+			</li>
+			<li class="event">
+				<a href="#" title="Primary Health" class="event-link">
+				Primary Health					</a><br/>
+				<span class="post-date">
+				Friday					<br/>
+				<time datetime="14:00" class="timeslot-start">2:00 pm</time>
+				- 						<time datetime="18:00" class="timeslot-end">6:00 pm</time>
+				</span>
+			</li>
+		</ul>
+	</aside>
+</div>

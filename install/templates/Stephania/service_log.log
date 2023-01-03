@@ -1,0 +1,38 @@
+[2019-07-13 17:06:28] Хост: ac1.e-stile.ru
+template:Stephaniamaket:Stephania
+seonlinehttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%22ac1.e-stile.ru%22%7Dhttps://api.beget.com/api/site/add?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22name%22%3A%22ac1.e-stile.ru%22%7DID зоны: 1504
+
+Пробуем добавить домен: ac1.e-stile.ru
+https://api.beget.com/api/domain/addVirtual?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22hostname%22%3A%22ac1%22%2C%22zone_id%22%3A%221504%5Cn%22%7Dhttps://api.beget.com/api/site/linkDomain?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22domain_id%22%3A5427006%2C%22site_id%22%3A3692466%7Dhttps://api.beget.com/api/domain/changePhpVersion?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22full_fqdn%22%3A%22ac1.e-stile.ru%22%2C%22php_version%22%3A7.2%2C%22is_cgi%22%3A0%7DСоздаем базу
+https://api.beget.com/api/mysql/addDb?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200103%22%2C%22password%22%3A%220bfa14ecb9%22%7Dhttps://api.beget.com/api/mysql/changeAccessPassword?login=edgestile&passwd=o9ybFja9MVPQ&input_format=json&output_format=json&input_data=%7B%22suffix%22%3A%22200103%22%2C%22access%22%3A%22localhost%22%2C%22password%22%3A%220bfa14ecb9%22%7D
+Устанавливаем дамп edgestile_200103
+result:0
+
+Копируем билд /home/e/edgestile/admin/home/siteedit/bin/setup/seonline -> /home/e/edgestile/ac1.e-stile.ru ok installTeplate - StephaniaArray
+(
+    [DBName] => edgestile_200103
+    [HostName] => localhost
+    [DBUserName] => edgestile_200103
+    [DBPassword] => 0bfa14ecb9
+    [DBDsn] => mysql
+)
+
+Устанавливаем дамп edgestile_200103
+result:0
+Base ID:5912
+Хост ID: 3692466
+Попытка привязки: ac1.e-stile.ru (0)
+Домен привязан: ac1.e-stile.ru (5427006)
+Получил все алиасы из api_domains Array
+(
+)
+ 
+domain_id: 5427006 для 13196
+
+Меняем статус у домена 13196 на N 
+Статус активности ОК
+
+OK
+Sat, 13 Jul 2019 17:06:28 +0300 
+ 
+

@@ -1,0 +1,45 @@
+{% for group in part.thisgroups.items %}
+<div class="tm_pb_section  tm_pb_section_1 tm_section_regular tm_section_transparent">
+	<div class="container">
+		<div class=" row tm_pb_row tm_pb_row_1">
+			<div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_1 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<hr class="tm_pb_module tm_pb_space tm_pb_divider_0" />
+				<div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_0">
+					<h1>{{ group.name }}</h1>
+				</div>
+				<!-- .tm_pb_text -->
+				<div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_1">
+					<p><span style="color: #48526c;">{{ group.note }}</span></p>
+				</div>
+				<!-- .tm_pb_text -->
+				<hr class="tm_pb_module tm_pb_space tm_pb_divider_1" />
+			</div>
+			<!-- .tm_pb_column -->
+		</div>
+		<!-- .tm_pb_row -->
+	</div>
+</div>
+<!-- .tm_pb_section -->
+<div class="tm_pb_section invert tm_pb_section_2 tm_section_regular tm_section_transparent">
+	<div class=" row tm_pb_row tm_pb_row_2 tm_pb_row_fullwidth tm_pb_col_padding_reset">
+    	    {% for record in part.gvalues[group.id].items %}
+    	    <div class="tm_pb_column tm_pb_column_1_4  tm_pb_column_2 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+    			<div class="tm_pb_link_box tm_pb_link_box_0 tm_pb_module">
+    				<div class="tm_pb_link_box_wrap">
+    					<div class="tm_pb_link_box_content" style="background-image: url({{ record.image }})">
+    						<div class="desc_linkbox">
+    							<span class="tm-pb-icon" style="color: #ffffff;" data-icon="&#xf007;"></span>			
+    							<h1 class="tm_pb_link_box_title"><a href="{{ record.url }}">{{ record.name }}</a></h1>
+    							<div class="tm_pb_blurb_content"> </div>
+    						</div>
+    					</div>
+    					<!-- .tm_pb_blurb_content -->
+    				</div>
+    			</div>
+    			<!-- .tm_pb_link_box -->
+    		</div>
+    		{% endfor %}
+	</div>
+	<!-- .tm_pb_row -->
+</div>
+{% endfor %}

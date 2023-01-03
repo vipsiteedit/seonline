@@ -1,0 +1,35 @@
+<section id="teams" class="section teams">
+    <div class="container">
+        <div class="row">
+            {% for record in part.values.items %}
+            <div class="col-md-3 col-sm-6">
+                <div class="person">
+                    <img src="{{ record.image }}" alt="" class="img-responsive">
+                    <div class="person-content">
+                        <h4>{{ record.name }}</h4>
+                        <h5 class="role">{{ record.fields.role }}</h5>
+                        <p>{{ record.note }}</p>
+                    </div>
+                    <ul class="social-icons clearfix">
+                        {% if record.fields.fb %}
+                        <li><a href="{{ record.fields.fb }}"><span class="fa fa-facebook"></span></a></li>
+                        {% endif %}
+                        {% if record.fields.tw %}
+                        <li><a href="{{ record.fields.tw }}"><span class="fa fa-twitter"></span></a></li>
+                        {% endif %}
+                        {% if record.fields.link %}
+                        <li><a href="{{ record.fields.link }}"><span class="fa fa-linkedin"></span></a></li>
+                        {% endif %}
+                        {% if record.fields.ggp %}
+                        <li><a href="{{ record.fields.ggp }}"><span class="fa fa-google-plus"></span></a></li>
+                        {% endif %}
+                        {% if record.fields.drb %}
+                        <li><a href="{{ record.fields.drb }}"><span class="fa fa-dribbble"></span></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
